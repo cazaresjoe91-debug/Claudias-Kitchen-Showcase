@@ -1,0 +1,494 @@
+/* 
+
+        Final Project
+        Claudia's Kithchen
+
+        Author: Jose Cazares
+        Date:   May 7, 2026
+         
+        Filename: [Showcase]_fp.css
+    
+    
+
+*/
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header1/mainlogo modifications*/
+h1 {
+    color: #41c6b2;
+    shape-outside: margin-box;
+    font-size: 99px;
+    text-align: left;
+    font-style:italic;
+    font-family: "brush script mt", cursive;
+    opacity: 0.99;
+    transition: transform 0.4s ease-in-out;
+    transform: translateY(0);
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+
+/* h1 when hidden*/
+.h1-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+/* mainheader/h1 mods */
+.main-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*box modifications*/
+.box1 {
+    color: rgb(154, 51, 51);
+    background: #fff9d1;
+    text-size-adjust: 25px;
+    border: 30px solid #fff9d1;
+    margin: 20px;
+    border-width: 2px;
+    padding: 10px;
+    height: 250px;
+    opacity: 1%;
+}
+
+/*box2 modifications*/
+.box2 {
+    color: #000;
+    text-size-adjust: 25px;
+    margin: 20px;
+    margin-bottom: 50px;
+    font-size: large;
+    background-color: #fff9d1;
+    padding-left: 5px;
+    margin-right: 60%;
+    border-style: groove;
+ 
+}
+
+/*box3 mods*/
+
+.box3 {
+    color: #020202;
+    background: #fff9d1;
+    border: 90px solid #a0a0a0;
+    margin: 10px;
+    height: 500px;
+    padding: 20px;
+    border-width: 2px;
+}
+
+
+/*body modifications*/
+body {
+    background-image: url(images/Claudias_Kitchen_background.jpeg);
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #fdf5e6;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+
+}
+/*navbar modifications*/
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+/* Styling navbar */
+.navbar {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:9999;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease; 
+    padding: 19px;
+}
+
+
+.nav-hidden {
+    transform: translateY(-100%) !important;
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #5dc7a4;
+    backdrop-filter: blur(7\5px);
+    -webkit-backdrop-filter: blur(7px);
+    color:rgb(56, 41, 41);
+    overflow: hidden;
+    list-style-type: none;
+    border-style:groove;
+    border: 1.5px solid #3a3f87;
+
+}
+
+.navbar a{
+    color: #fff9d1;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar a:hover {
+    color: #5dc7a4;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: linear-gradient(0deg,#000000 0%,#0c1138 100%) ;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.logo-block {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    height: 100px;
+    transform: translate(x,y);
+}
+
+.collage-container {
+    overflow: hidden; /* Hides images as the move */
+    width: 100%;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.collage-track {
+    display:flex;
+    width: max-content; /* Space for both set */
+    animation: scroll 22s linear infinite;
+}
+
+.collage-set {
+    display: flex;
+    gap: 15px;
+    justify-content:space-around;
+    width: 50%;  /* Each set takes half the track */
+}
+
+.collage-set img {
+    height: 250px; 
+    width: auto;
+    object-fit: cover;
+    padding: 3px;
+    background-color: #fff9d1;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+/* track to left by one set's width */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-70%); }
+}
+
+/* Pause when hovering */
+.collage-container:hover .collage-track{
+    animation-play-state: paused;
+}
+
+/* Code only runs on 768px screens wide or less */
+@media (max-width) {
+    .collage-group img {
+
+        height: 120px;
+        gap: 8px;
+    }
+
+    .collage-track {
+
+        animation-duration: 30s;
+    }
+
+    .navbar ul {
+
+        gap: 10px;
+    }
+}
+
+.box22 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    padding-left: 20px;
+}
+
+.box32 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+}
+
+.box42 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+}
+
+.box52 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+}
+
+.box62 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+}
+
+.box23 {
+   background-image: url(image/collage.jpeg);
+   border-bottom: 50px;
+}
+
+.menu-feature-block {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fdf5e6;
+    border: 10px solid #5d4037;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #2e1a05;
+}
+
+.block-caption {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.menu-card {
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+    
+}
+
+.cart-sidebar {
+    text-align: center;
+    color: #5dc7a4;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart-hidden {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.box14 { 
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+.box24 {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+.box34 {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.box15 {
+    block-size: 100px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#41c6b2;
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    ;
+}
+
+.box35 {
+    block-size: 200px;
+}
+
+.box26 {
+    block-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 1px;
+    padding-bottom: 200px;
+    margin-left: 20px;
+    margin-right: 13px;
+    color: #fcfcfc;
+    border-color: #000;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Apply mods*/
+.apply-section {
+    background-color: #41c6b2;
+  margin-top: 50px;
+  
+  /* Give it a flexible width */
+  width: 100%;
+  max-width: 450px; /* Adjust this to fit your parchment frame */
+  
+  /* Now these right and left controls will work directly */
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+    
+}
+
+.box27 {
+    border: 3px solid #41c6b2;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.box37 {
+    border: 3px solid #000;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.box47 {
+    border: 3px solid #41c6b2;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.box57 {
+    border: 3px solid #000;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.box38 {
+    background-color: rgba(0, 0, 0, 0);
+    border: 110px solid rgba(0, 0, 0, 0);
+}
+
+.order-section {
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+
+.menu-item {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.quantity-container {
+  margin: 15px 0;
+}
+
+.total-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: #219150;
+}
+
+.hidden {
+  display: none;
+}
+
+#order-summary {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #e8f8f5;
+  border: 1px solid #27ae60;
+  border-radius: 4px;
+  color: #1e8449;
+}

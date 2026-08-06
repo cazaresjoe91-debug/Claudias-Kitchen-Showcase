@@ -1,0 +1,58 @@
+@import url("locations.html");
+@import url("menu.html");
+@import url("catering.html");
+@import url("events.html");
+@import url("apply.html");
+@import url("contact.html");
+@import url("about.html");
+
+#catering-page {
+    color: aquamarine;
+    background-image: url(images/catering.jpeg);
+}
+
+#locations-page {
+    color: aqua;
+    background-image: url(images/locations.jpeg);
+}
+
+#menu-page {
+    background-image: url(images/menu.jpeg);
+}
+
+#events-page {
+    background-image: url(images/events.jpeg);
+}
+
+#home-page {
+    background-image: url(images/home.jpeg);
+}
+
+#apply-page {
+    background-image: url(images/apply.jpeg);
+}
+
+#contact-page {
+    background-image: url(images/contact.jpeg);
+}
+
+#about-page {
+    background-image: url(images/about.jpeg);
+}
+
+@media (max-width: 768px) {
+    .collage-group img {
+        /* Shrink images */
+        height: 120px;
+        gap: 8px;
+    }
+    
+    .collage-track {
+        /* Slow animation */
+        animation-duration: 30s;
+    }
+
+    .navbar ul {
+        /* Stack nav items or reduce spacing */
+        gap: 10px;    }
+}

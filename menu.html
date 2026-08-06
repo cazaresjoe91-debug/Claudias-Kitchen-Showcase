@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Final Project
+        Claudia's Kithchen
+
+        Author: Jose Cazares
+        Date:   May 7, 2026
+         
+        Filename: menu.html
+    
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluadia's Kitchen</title>
+    <link rel="stylesheet" href="[Showcase]_fp.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <body id="menu-page">
+    <h1 class="main-header">Claudia's Kitchen</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="locations.html">LOCATIONS</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="catering.html">CATERING</a></li> 
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>  
+
+  
+
+    </p>
+     <div class="menu-feature-block">
+        <div class="image-frame">
+            <img src="images/menucollage.jpeg" alt="A spread of traditional Mexican entrees">
+        </div>
+        <div class="block-caption">
+            <h2>Our House Favorites</h2>
+            <p>Fajita</p> <p>Rice</p> <p>Mole</p>
+            <p>Tacos</p> <p>Picadillo</p> <p>Beans</p> 
+            <p>Tortillas</p> <p>Guacamole</p> <p>Menudo</p>
+            <p>Pico de Gallo</p> <p>Enchiladas</p>
+
+        </div>
+     </div>
+ 
+ 
+
+ 
+
+ <section class="order-section">
+  <h2>Place Your Order</h2>
+  
+  <form id="order-form">
+    <!-- Menu Option 1 -->
+    <div class="menu-item">
+      <input type="radio" id="item1" name="menuChoice" value="12.99" checked>
+      <label for="item1">
+        <strong>Fajita Tacos Combo</strong> — $12.99
+      </label>
+    </div>
+
+    <!-- Menu Option 2 -->
+    <div class="menu-item">
+      <input type="radio" id="item2" name="menuChoice" value="10.50">
+      <label for="item2">
+        <strong>Enchiladas & Rice</strong> — $10.50
+      </label>
+    </div>
+
+    <!-- Menu Option 3 -->
+    <div class="menu-item">
+      <input type="radio" id="item3" name="menuChoice" value="8.75">
+      <label for="item3">
+        <strong>Mole Single</strong> — $8.75
+      </label>
+    </div>
+
+    <!-- Quantity Selector -->
+    <div class="quantity-container">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+    </div>
+
+    <!-- Dynamic Total Display -->
+    <div class="total-display">
+      Total Price: $<span id="total-price">12.99</span>
+    </div>
+
+    <button type="submit" id="submit-btn">Complete Order</button>
+  </form>
+
+  <!-- Output Confirmation Box -->
+  <div id="order-summary" class="hidden"></div>
+</section>
+
+<footer>
+    <p>Visit Us Today
+
+     Edinburg: 123 University Dr. | (270) 333-7982
+     Pharr: 456 Cage Blvd. | (270) 333-7983
+
+     Open Daily: 7:00 AM – 10:00 PM
+     Breakfast served until 11:30 AM</p>
+    <p>&copy; 2026 Claudias' Kitchen. All rights reserved.</p>
+</footer>
+<script src="[Showcase]_script.js"></script>
+</body>
+</html>     
